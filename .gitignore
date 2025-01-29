@@ -1,4 +1,4 @@
-*
-!scoreboard_phv/*
-!player_cam_phv/*
+/*
+!scoreboard_phv/
+!player_cam_phv/
 !.gitignore
