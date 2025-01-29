@@ -34,28 +34,26 @@ body {
 .container {
   position: absolute;
   display: flex;
+  border: none;
   box-sizing: border-box;
   flex-direction: column;
   align-items: center;
   width: 496px;
   height: 55px;
   top: 14px;
-  background: #483f42;
-  border-radius: 12px;
-  padding-top: 4px;
+  padding: 0;
+
 }
 
 
 .p1.container {
   background-position: 100% 0;
   left: 380px;
-  padding-top: 12px;
 }
 
 .p2.container {
   background-position: 0 0;
   right: 380px;
-  padding-top: 12px;
 }
 
 /*.tournament_container {
@@ -78,10 +76,10 @@ body {
 
 
 .inner_container {
-  position: static;
-  width: 488px;
+  position: absolute;
+  width: 496px;
   height: 53px;
-  border-radius: 8px;
+  border-radius: 12px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -89,7 +87,7 @@ body {
   box-sizing: border-box;
   overflow: hidden;
   background: #483f42;
-  margin-bottom: 17px;
+
 }
 
 .p1 .inner_container {
@@ -108,7 +106,7 @@ body {
   justify-content: center;
   box-sizing: border-box;
   width: 100%;
-  margin: 0 12px;
+
   flex-direction: column;
   overflow: hidden;
   color: var(--text-color);
@@ -216,7 +214,7 @@ body {
   top: 75px;
   right :380px;
   background: #483f42;
-  border-radius: 8px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -344,21 +342,24 @@ body {
 .score {
   text-align: center;
   width: 53px;
-  height: 25px;
+  height: 53px;
   font-size: 35px;
   flex-shrink: 0;
   overflow: visible;
   border-radius: 12px;
+  paddi
 }
 
 .p1 .score {
   color: var(--p1-score-color);
   background: #c0362d;
+
 }
 
 .p2 .score {
   color: var(--p2-score-color);
   background: #c0362d;
+
 }
 
 .sponsor {
