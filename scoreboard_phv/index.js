@@ -168,15 +168,15 @@ LoadEverything().then(() => {
     let matchTexts = [];
     let phaseTexts = [];
 
-// Contenu pour l'élément `.match`
-if (data.tournamentInfo.tournamentName) matchTexts.push(data.tournamentInfo.tournamentName.toUpperCase());
-if (data.score[window.scoreboardNumber].match) matchTexts.push(data.score[window.scoreboardNumber].match.toUpperCase());
-SetInnerHtml($(".match"), matchTexts.join(" - "));
+    // Contenu pour l'élément `.match`
+    if (data.tournamentInfo.tournamentName) matchTexts.push(data.tournamentInfo.tournamentName.toUpperCase());
+    if (data.score[window.scoreboardNumber].match) matchTexts.push(data.score[window.scoreboardNumber].match.toUpperCase());
+    SetInnerHtml($(".match"), matchTexts.join(" - "));
 
-// Contenu pour l'élément `.phase`
-if (data.score[window.scoreboardNumber].phase) phaseTexts.push(data.score[window.scoreboardNumber].phase.toUpperCase());
-if (data.score[window.scoreboardNumber].best_of_text) phaseTexts.push(data.score[window.scoreboardNumber].best_of_text.toUpperCase());
-SetInnerHtml($(".phase"), phaseTexts.join(" - "));
+    // Contenu pour l'élément `.phase`
+    if (data.score[window.scoreboardNumber].phase) phaseTexts.push(data.score[window.scoreboardNumber].phase.toUpperCase());
+    if (data.score[window.scoreboardNumber].best_of_text) phaseTexts.push(data.score[window.scoreboardNumber].best_of_text.toUpperCase());
+    SetInnerHtml($(".phase"), phaseTexts.join(" - "));
 
   };
 });

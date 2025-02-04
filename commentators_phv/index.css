@@ -49,27 +49,31 @@ body {
 .phase_container {
   position: absolute;
   box-sizing: border-box;
-  width: 496px;
-  height: 30px;
-  top: 75px;
-  right :380px;
+  width: 380;
+  height: 100px;
+  bottom: 0px;
   background: #483f42;
   border-radius: 12px;
   display: flex;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
-    border: 2px dashed #ff5722
-}.
-
-.phase {
-  display: flex;
-  width: 75%;
-  height: 1%;
   color: #ffffff;
-  font-size: 21px;
-  font-weight: 800;
-    border: 2px dashed #005722
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.phase_name {
+  display: flex;
+  font-size: 27px;
+  color: inherit;
+}
+
+
+.tournament_name {
+  display: flex;
+  font-size: 35px;
+  color: inherit;
 }
 
 .mic_icon {
